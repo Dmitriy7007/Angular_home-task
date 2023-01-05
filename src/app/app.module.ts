@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IconTooltipModule } from './icon-tooltip/icon-tooltip.module';
+import { ProductCardModule } from './product-card/product-card.module';
+import { DropdownModule } from './dropdown/dropdown.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        DropdownModule,
+        IconTooltipModule,
+        ProductCardModule,
+    ]
 })
 export class AppModule { }
